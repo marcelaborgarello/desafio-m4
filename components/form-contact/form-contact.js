@@ -1,3 +1,29 @@
+const postForm = () => {
+  const formEl = document.querySelector(".form-contact__container");
+  formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = formEl.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
+    const data = {
+      to: "imprenart@gmail.com",
+      message: `Nombre: ${name}, Email: ${email}, Mensaje: ${message}.`,
+    };
+
+    // console.log(name, email, message);
+    // console.log(data);
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    }).then((data) => data.json());
+
+    formEl.reset();
+  });
+};
+
 const formContactComponent = (el) => {
   const formContact = document.createElement("form");
   formContact.classList.add("form-contact__container");
@@ -25,4 +51,5 @@ const formContactComponent = (el) => {
     `;
 
   el.appendChild(formContact);
+  postForm();
 };
