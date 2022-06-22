@@ -58,9 +58,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-start;
-
   background-color: #222;
   color: #ddd;
+  padding: 20px;
 }
 
 .portfolio-containe__title {
