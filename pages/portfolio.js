@@ -4,7 +4,7 @@ const addCardTemplate = (params, id) => {
   const dataCard = params.items;
   dataCard.map((el, i) => {
     template.content.querySelector(".card__img").src =
-      params.includes.Asset[0].fields.file.url;
+      params.includes.Asset[i].fields.file.url;
 
     template.content.querySelector(".card_description__title").textContent =
       el.fields.title;
