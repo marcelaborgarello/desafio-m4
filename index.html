@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./components/header/header.js"></script>
+    <link rel="stylesheet" href="./components/header/header.css" />
+
+    <script defer src="./components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+
+    <script defer src="./components/form-contact/form-contact.js"></script>
+    <link rel="stylesheet" href="./components/form-contact/form-contact.css" />
+
+    <script defer src="./pages/index.js"></script>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div id="header-container"></div>
+      <div class="welcome">
+        <h1 class="welcome__title">Soy Marcela</h1>
+        <h3 class="welcome__mi-site">Desarrollo Web</h3>
+      </div>
+    </div>
+    <section id="my-presentation"></section>
+
+    <div class="services-container">
+      <h2 class="services-containe__title">Mis Servicios</h2>
+      <section id="my-services"></section>
+    </div>
+    <section id="my-portfolio"></section>
+    <section id="form-contact"></section>
+    <section id="footer-container"></section>
+
+    <template id="card-template">
+      <div class="card">
+        <div class="card__img-containt">
+          <img class="card__img" src="" alt="" />
+        </div>
+        <div class="card_description">
+          <h2 class="card_description__title"></h2>
+          <span class="card_description__detail"> </span>
+          <a href="" class="card_description__link" target="_blank"
+            >Ver más...</a
+          >
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
