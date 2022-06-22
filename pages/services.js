@@ -1,7 +1,6 @@
 const addCardTemplate = (params, id) => {
   const template = document.getElementById("card-template");
   const container = document.getElementById(`${id}`);
-  console.log(params.items);
   const dataCard = params.items;
   dataCard.map((el, i) => {
     template.content.querySelector(".card__img").src =
@@ -31,10 +30,10 @@ const getData = (type, id) => {
 
 const addComponentServices = () => {
   const header = document.querySelector(".header");
-  getData("sevices", "card-services");
   const footer = document.querySelector(".footer");
 
   headerComponent(header);
+  getData("sevices", "card-services");
   footerComponent(footer);
 };
 

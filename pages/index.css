@@ -119,6 +119,7 @@ body {
 #my-services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
 }
 
 .services-containe__title {
