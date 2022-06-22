@@ -3,7 +3,7 @@ const headerComponent = (el) => {
   header.classList.add("header-component");
   header.innerHTML = `
     <div class="header-component__container">
-      <a href="../../index.html" class="header-component__logo">MARCE</a>
+      <a href="./index.html" class="header-component__logo">MARCE</a>
 
       <nav class="header-component-nav">
         <ul>
